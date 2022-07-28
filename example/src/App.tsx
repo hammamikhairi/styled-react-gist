@@ -2,25 +2,29 @@ import Gist from 'embed-gist';
 
 function App() {
 
-  const GistStyle = `
-    .js-file-line-container {
-      //background : #f7f7f7 !important;
-      background: red !important;
-      font-size : 200px !important;
-    }
+  const css = `
+  .js-file-line-container {
+    background : whitesmoke !important;
+  }
+  .gist-meta{
+    display : none !important
+  }
+  .gist-data {
+    background : whitesmoke !important;
+    padding : 1rem 0.5rem !important;
+    // background: transparent !important;
+  }
   `;
 
   return (
-    <div className="App">
-       <Gist
+    <Gist
+      // gistId = '189e5c6bbc7217b8bdf952ff243c2411'
+      file = 'error_handler_clean.py'
+      gistUrl = 'https://gist.github.com/EvieePy/7822af90858ef65012ea500bcecf1612#file-error_handler-py'
 
-          // style  ={GistStyle}
-          styleSheetUrl="https://pleasedont.hammamikhairi.repl.co/css/gist.css"
-          gistId = '7822af90858ef65012ea500bcecf1612'
-          file = 'error_handler.py'
-          // gistUrl = 'https://gist.github.com/makupi/c508c9d33bb01dcc04e57d1a93c23ae1#file-reactionroles-discord-py'
-        />
-    </div>
+      cssString  = {css}
+      styleSheetUrl = "https://pleasedont.hammamikhairi.repl.co/css/npm.css"
+    />
   );
 }
 
