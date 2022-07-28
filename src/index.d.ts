@@ -1,7 +1,7 @@
 import { PureComponent } from "react";
 
 export declare interface Props {
-  style ?: string
+  cssString ?: string
   styleSheetUrl ?: string
   gistId ?: string
   file : string

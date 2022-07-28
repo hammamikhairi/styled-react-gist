@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-    style ?: string
+    cssString ?: string
     styleSheetUrl ?: string
     gistId ?: string
     file : string
@@ -12,24 +12,24 @@ class Gist extends React.PureComponent <Props, any> {
   file ?: string
   id ?: string | undefined
   styleSheetUrl ?: string | undefined
-  style ?: string | undefined
+  cssString ?: string | undefined
   iframeRef ?: any
+  rand ?: number
   constructor(props : Props) {
     super(props)
-
+    if (props.gistId === undefined && props.gistUrl === undefined) throw new Error('Either gistId or gistUrl must be specified')
+    this.rand = Math.random();
     this.id = props.gistUrl ? props.gistUrl?.match(/(\.com\/.*\/)([^#]+)/)?.pop() : props.gistId
     this.file = props.file
-    // this.file = props.gistUrl?.match(/(#)(.*?)([^#]+)/)?.pop()
-    // if (this.file !== props.file && props.file) this.file = props.file
     this.styleSheetUrl = props.styleSheetUrl
-    this.style = props.style
+    this.cssString = props.cssString
   }
 
   componentDidMount() {
     this.updateIframe()
   }
 
-  componentDidUpdate(_prevProps : any, _prevState : any) {
+  componentDidUpdate() {
     this.updateIframe()
   }
 
@@ -42,9 +42,9 @@ class Gist extends React.PureComponent <Props, any> {
       this.file ? '?file=' + this.file : ''
     }`
     const gistScript = `<script type="text/javascript" src="${gistLink}"></script>`
-    const styles = `<style>${this.style}</style>`
-    const elementId = `gist-${this.id}-${this.file}`
-    const resizeScript = `onload="parent.document.getElementById('${elementId}').style.height=document.body.scrollHeight + 'px'"`
+    const styles = `<style>${this.cssString}</style>`
+    const elementId = `gist-${this.id}-${this.file}-${this.rand}`
+    const resizeScript = `onload="parent.document.getElementById('${elementId}').style.height= (document.body.scrollHeight + 15) + 'px'"`
     const styleSheet = this.styleSheetUrl
       ? `<link rel="stylesheet" href="${this.styleSheetUrl}">`
       : ''
@@ -63,7 +63,7 @@ class Gist extends React.PureComponent <Props, any> {
         }}
         width='100%'
         frameBorder={0}
-        id={this.file ? `gist-${this.id}-${this.file}` : `gist-${this.id}`}
+        id={ `gist-${this.id}-${this.file}-${this.rand}`}
       />
     )
   }
