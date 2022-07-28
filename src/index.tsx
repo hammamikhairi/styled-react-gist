@@ -7,15 +7,8 @@ interface Props {
     file : string
     gistUrl ?: string
 }
-/**
-* @typedef {object} MyType
-* @property {string} aString
-* @property {number} aNumber
-* @property {Date} aDate
-*/
 
 class Gist extends React.PureComponent <Props, any> {
-  /** @type {MyType} */
   file ?: string
   id ?: string | undefined
   styleSheetUrl ?: string | undefined
