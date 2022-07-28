@@ -1,0 +1,43 @@
+{
+  "name": "embed-gist",
+  "version": "2.0.0",
+  "description": "Easily embed and customize github gists with this blazingly fast, dependency-free package",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "types/index.d.ts",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "gist",
+    "github",
+    "embed",
+    "iframe",
+    "customization",
+    "style",
+    "typescript"
+  ],
+  "author": "khairi hammami",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6"
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "dependencies": {
+
+  }
+}
