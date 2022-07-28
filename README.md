@@ -2,14 +2,14 @@
 
 Upgraded rewrite of [react-gist](https://github.com/tleunen/react-gist) created by [Tommy](https://github.com/tleunen). Credit goes out to those who helped build that library.
 
+
+[![NPM](https://img.shields.io/npm/v/styled-gist-embed.svg)](https://www.npmjs.com/package/styled-gist-embed)
 <a href="https://reactjs.org/">
     <img alt="react" src="https://badges.aleen42.com/src/react.svg" >
 </a>
 <a href="https://www.typescriptlang.org">
     <img alt="code language: typescript" src="https://badges.aleen42.com/src/typescript.svg">
 </a>
-
-[![NPM](https://img.shields.io/npm/v/styled-gist-embed.svg)](https://www.npmjs.com/package/styled-gist-embed)
 
 
 This rewrite:
