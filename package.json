@@ -1,6 +1,6 @@
 {
   "name": "embed-gist",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Easily embed and customize github gists with this blazingly fast, dependency-free package",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -26,7 +26,25 @@
     "style",
     "typescript"
   ],
-  "author": "khairi hammami",
+  "author": {
+    "name": "Khairi Hammami",
+    "email": "khairihammami@outlook.com"
+  },
+  "maintainers": [
+    {
+      "name": "Khairi Hammami",
+      "email": "khairihammami@outlook.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hammamikhairi/embed-gist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hammamikhairi/embed-gist/issues"
+  },
+  "homepage": "https://github.com/hammamikhairi/embed-gist",
+  "readmeFilename": "README.md",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.7.4",
@@ -37,7 +55,5 @@
     "react": ">=16.14.0",
     "react-dom": ">=16.14.0"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
