@@ -1,5 +1,5 @@
 {
-  "name": "embed-gist",
+  "name": "styled-gist-embed",
   "version": "1.0.0",
   "description": "Easily embed and customize github gists with this blazingly fast, dependency-free package",
   "main": "./lib/cjs/index.js",
