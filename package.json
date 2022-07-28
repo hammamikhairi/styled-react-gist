@@ -6,9 +6,7 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "files": [
-    "types/index.d.ts",
-    "lib",
-    "es"
+    "/lib"
   ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
