@@ -1,4 +1,4 @@
-# embed-gist
+# styled-gist-embed
 
 Upgraded rewrite of [react-gist](https://github.com/tleunen/react-gist) created by [Tommy](https://github.com/tleunen). Credit goes out to those who helped build that library.
 
@@ -9,7 +9,7 @@ Upgraded rewrite of [react-gist](https://github.com/tleunen/react-gist) created 
     <img alt="code language: typescript" src="https://badges.aleen42.com/src/typescript.svg">
 </a>
 
-[![NPM](https://img.shields.io/npm/v/embed-gist.svg)](https://www.npmjs.com/package/embed-gist)
+[![NPM](https://img.shields.io/npm/v/styled-gist-embed.svg)](https://www.npmjs.com/package/styled-gist-embed)
 
 
 This rewrite:
@@ -29,20 +29,20 @@ this will allow applying adjustments to an imported css file :)
 ##### [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm):
 
 ```bash
-npm i embed-gist
+npm i styled-gist-embed
 ```
 
 ##### [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
 ```bash
-yarn add embed-gist
+yarn add styled-gist-embed
 ```
 
 ## ✨ Usage
 
 ```typescript jsx
 import React from "react";
-import Gist from "embed-gist";
+import Gist from "styled-gist-embed";
 
 export const YourComponent = () => {
 
@@ -63,7 +63,7 @@ export const YourComponent = () => {
   return (
     <Gist
       gistId = '189e5c6bbc7217b8bdf952ff243c2411'
-      file = 'embed-gist.jsx'
+      file = 'styled-gist-embed.jsx'
       gistUrl = 'https://gist.github.com/hammamikhairi/189e5c6bbc7217b8bdf952ff243c2411'
 
       style = {cssString}
@@ -74,7 +74,7 @@ export const YourComponent = () => {
 ```
 The component will render :
 <p>
-  <img src='https://cdn.discordapp.com/attachments/992802358998355999/1002293941334454322/unknown.png'>
+  <img src='https://cdn.discordapp.com/attachments/992802358998355999/1002328190364168273/unknown.png'>
 </p>
 
 ## 📌 Props

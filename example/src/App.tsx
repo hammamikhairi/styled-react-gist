@@ -1,4 +1,4 @@
-import Gist from 'embed-gist';
+import Gist from 'styled-gist-embed';
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
 
   return (
     <Gist
-      // gistId = '189e5c6bbc7217b8bdf952ff243c2411'
-      file = 'error_handler_clean.py'
-      gistUrl = 'https://gist.github.com/EvieePy/7822af90858ef65012ea500bcecf1612#file-error_handler-py'
+      gistId = '189e5c6bbc7217b8bdf952ff243c2411'
+      file = 'styled-gist-embed.jsx'
+      // gistUrl = 'https://gist.github.com/hammamikhairi/189e5c6bbc7217b8bdf952ff243c2411'
 
       cssString  = {css}
       styleSheetUrl = "https://pleasedont.hammamikhairi.repl.co/css/npm.css"
