@@ -1,5 +1,5 @@
 {
-  "name": "styled-gist-embed",
+  "name": "styled-react-gist",
   "version": "1.0.0",
   "description": "Easily embed and style github gists with this blazingly fast, dependency-free package",
   "main": "./lib/cjs/index.js",
@@ -36,12 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammamikhairi/styled-gist-embed.git"
+    "url": "https://github.com/hammamikhairi/styled-react-gist.git"
   },
   "bugs": {
-    "url": "https://github.com/hammamikhairi/styled-gist-embed/issues"
+    "url": "https://github.com/hammamikhairi/styled-react-gist/issues"
   },
-  "homepage": "https://github.com/hammamikhairi/styled-gist-embed",
+  "homepage": "https://github.com/hammamikhairi/styled-react-gist",
   "readmeFilename": "README.md",
   "license": "MIT",
   "devDependencies": {

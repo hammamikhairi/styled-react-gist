@@ -1,4 +1,4 @@
-import Gist from 'styled-gist-embed';
+import Gist from 'styled-react-gist';
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <Gist
       gistId = '189e5c6bbc7217b8bdf952ff243c2411'
-      file = 'styled-gist-embed.jsx'
+      file = 'styled-react-gist.jsx'
       // gistUrl = 'https://gist.github.com/hammamikhairi/189e5c6bbc7217b8bdf952ff243c2411'
 
       cssString  = {css}

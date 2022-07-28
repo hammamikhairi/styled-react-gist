@@ -1,9 +1,9 @@
-# styled-gist-embed
+# styled-react-gist
 
 Upgraded rewrite of [react-gist](https://github.com/tleunen/react-gist) created by [Tommy](https://github.com/tleunen). Credit goes out to those who helped build that library.
 
 
-[![NPM](https://img.shields.io/npm/v/styled-gist-embed.svg)](https://www.npmjs.com/package/styled-gist-embed)
+[![NPM](https://img.shields.io/npm/v/styled-react-gist.svg)](https://www.npmjs.com/package/styled-react-gist)
 <a href="https://reactjs.org/">
     <img alt="react" src="https://badges.aleen42.com/src/react.svg" >
 </a>
@@ -29,20 +29,20 @@ this will allow applying adjustments to an imported css file :)
 ##### [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm):
 
 ```bash
-npm i styled-gist-embed
+npm i styled-react-gist
 ```
 
 ##### [`yarn`](https://classic.yarnpkg.com/en/docs/install/#mac-stable):
 
 ```bash
-yarn add styled-gist-embed
+yarn add styled-react-gist
 ```
 
 ## ✨ Usage
 
 ```typescript jsx
 import React from "react";
-import Gist from "styled-gist-embed";
+import Gist from "styled-react-gist";
 
 export const YourComponent = () => {
 
@@ -63,7 +63,7 @@ export const YourComponent = () => {
   return (
     <Gist
       gistId = '189e5c6bbc7217b8bdf952ff243c2411'
-      file = 'styled-gist-embed.jsx'
+      file = 'styled-react-gist.jsx'
       gistUrl = 'https://gist.github.com/hammamikhairi/189e5c6bbc7217b8bdf952ff243c2411'
 
       style = {cssString}
