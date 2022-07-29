@@ -14,15 +14,14 @@ Upgraded rewrite of [react-gist](https://github.com/tleunen/react-gist) created 
 
 This rewrite:
 - Adds native TS support
-- Adds Styling feature ( url : css file link || raw css )
+- Adds Styling feature ( url || raw css  )
 
 
 
 #### How it works
 
-Injects css into the embedded iframe, it can a url of a css file or raw css or both!. <br>
-Using raw css will override the url-imported css,
-this will allow applying adjustments to an imported css file :)
+This package embeds styled github gists in react applications, the styles currently can be imported with a url of a css file `[DOMAIN_NAME]/[FILE_NAME].css` and/or raw css ( refer to this <a href='#-usage'>example</a> )<br>
+If both methods were used, the styles specified in `cssString` will override the ones, if mentioned, imported with a url. This will allow applying adjustments to an open source (coming soon) css file :)
 
 ## 🚀 Installation
 
@@ -84,14 +83,14 @@ Prop                  | Type     | Description                   | Required
 `file`|string|Name of the gist's file (if the gist has many file, pick any of them) <br> **avoid using special Characters**|Yes
 `gistId`|string|gist's id|Yes (if `url` isn't specified)
 `gistUrl`|string|gist's url| Yes (if `gistId` isn't specified)
-`cssString`|string| a string containing css (refer to this <a href='##-usage'>example</a>) |No
+`cssString`|string| a string containing css (refer to this <a href='#-usage'>example</a>) |No
 `styleSheetUrl`|string|a url to a `.css` file|No|
 
 
 ### 📝 Notes
 > this package is still in development
 
-for now you can copy one of the themes in `./styles` and use it either as a `cssString` or `styleSheetUrl`
+<!-- for now you can copy one of the themes in `./styles` and use it either as a `cssString` or `styleSheetUrl` -->
 
 ## ✌️ License
 [MIT](https://opensource.org/licenses/MIT)
