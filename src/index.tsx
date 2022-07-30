@@ -59,7 +59,6 @@ class Gist extends React.PureComponent <Props, any> {
       <iframe
         ref={(ref) => {
           this.iframeRef = ref
-          console.log(typeof ref)
         }}
         width='100%'
         frameBorder={0}
