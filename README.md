@@ -16,10 +16,11 @@ This rewrite:
 - Adds native TS support
 - Adds Styling feature ( url || raw css  )
 
+## Why use styled-react-gist ?
+- the fastest library to embed themed code snippets in your website
+- because we care about your bundle size <3
 
-
-#### How it works
-
+## How it works
 This package embeds styled github gists in react applications, the styles currently can be imported with a url of a css file `[DOMAIN_NAME]/[FILE_NAME].css` and/or raw css ( refer to this <a href='#-usage'>example</a> )<br>
 If both methods were used, the styles specified in `cssString` will override the ones, if mentioned, imported with a url. This will allow applying adjustments to an open source (coming soon) css file :)
 
@@ -73,7 +74,7 @@ export const YourComponent = () => {
 ```
 The component will render :
 <p>
-  <img src='https://cdn.discordapp.com/attachments/992802358998355999/1002328190364168273/unknown.png'>
+  <img src='./example/preview.png'>
 </p>
 
 ## 📌 Props
