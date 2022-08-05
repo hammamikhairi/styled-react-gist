@@ -88,10 +88,5 @@ Prop                  | Type     | Description                   | Required
 `styleSheetUrl`|string|a url to a `.css` file|No|
 
 
-### 📝 Notes
-> this package is still in development
-
-<!-- for now you can copy one of the themes in `./styles` and use it either as a `cssString` or `styleSheetUrl` -->
-
 ## ✌️ License
 [MIT](https://opensource.org/licenses/MIT)
