@@ -66,7 +66,7 @@ export const YourComponent = () => {
       file = 'styled-react-gist.jsx'
       gistUrl = 'https://gist.github.com/hammamikhairi/189e5c6bbc7217b8bdf952ff243c2411'
 
-      style = {cssString}
+      cssString = {cssString}
       styleSheetUrl = "https://pleasedont.hammamikhairi.repl.co/css/npm.css"
     />
   );
